@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Flipper</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="/dist/style.css">
+</head>
+<body>
+  <header>
+    <h1>Color Flipper</h1>
+    <nav>
+      <ul>
+        <li id="name" class="view"><a href="#/name">Name</a></li>
+        <li id="rgb" class="view"><a href="#/rgb">RGB</a></li>
+        <li id="hex" class="view"><a href="#/hex">Hex</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <h2>background-color : <span id="color-code">rgb(255, 255,255)</span></h2>
+    <button id="color-flip-btn">Flip color</button>
+  </div>
+  <script type="module" src="/src/index.js"></script>
+</body>
+</html>
