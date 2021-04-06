@@ -1,0 +1,111 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background: #00c6ff;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  padding: 3rem;
+  min-height: 100vh;
+}
+
+.container h1 {
+  border-radius: 20px;
+  color: #0072ff;
+  background-color: #fff;
+  font-size: 4rem;
+  font-weight: 400;
+  padding: 1rem 2.4rem;
+  text-align: center;
+}
+
+.container h1::before {
+  content: "";
+  left: 25px;
+  right: 25px;
+  position: absolute;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container form button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+  padding: 0.8em 1em;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.container form button:hover {
+  background-color: #fff;
+  color: #0072ff;
+}
+
+.container form button:focus {
+  outline: none;
+}
+
+.wrapper {
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  margin: 3.2rem auto 4.8rem;
+  width: 150px;
+}
+
+.wrapper span {
+  color: green;
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 520px) {
+  .container h1 {
+    font-size: 5.6rem;
+  }
+  .container form {
+    flex-direction: row;
+  }
+  .container form button:nth-child(2) {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .wrapper {
+    height: 200px;
+    margin: 5.6rem auto 6.2rem;
+    width: 200px;
+  }
+  .wrapper span {
+    font-size: 8rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

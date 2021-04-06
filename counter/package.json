@@ -1,0 +1,11 @@
+{
+  "name": "counter",
+  "version": "1.0.0",
+  "description": "A program to count numbers",
+  "main": "index.js",
+  "scripts": {
+    "test": "sass ./src/style.scss ./dist/style.css"
+  },
+  "author": "Leonardo Teixeira",
+  "license": "ISC"
+}
