@@ -1,0 +1,122 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+// LAYOUT
+body {
+  background-image: url('../dist/images/background.jpg');
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 3rem 1fr 3rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 2;
+  padding: 2.4rem 0;
+  position: relative;
+  .logo {
+    width: 30px;
+    height: 30px;
+    img {
+      filter: invert(1);
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  nav {
+    background-color: #fff;
+    left: -3rem;
+    padding: 3rem;
+    position: absolute;
+    right: -3rem;
+    top: 100%;
+    li {
+      &:first-child {
+        padding-bottom: 1.4rem;
+      }
+      &:last-child {
+        padding-top: 1.4rem ;
+      }
+    }
+    li:not(:first-child):not(:last-child) {
+      padding: 1.4rem 0;
+    }
+    li:not(:last-child) {
+      border-bottom: 1px solid rgba(0, 0, 0, .05);
+    }
+    a {
+      color: #000;
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+    &::after {
+      background-color: rgba(0, 0, 0, .8);
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: -999;
+      height: calc(100vh - 78px);
+    }
+  }
+}
+
+#toggle {
+  // position: absolute;
+  // top: 10px;
+  // right: 0;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+  vertical-align: middle;
+  // z-index: 999;
+  &:focus {
+    outline: 0;
+  }
+  span {
+    display: block;
+    width: 80%;
+    height: 2px;
+    margin: 5px auto;
+    background: #fff;
+    transition: all .8s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+  }
+  &.open {
+    span:first-of-type {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    span:nth-of-type(2) {
+      opacity: 0;
+    }
+    span:last-of-type {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+}

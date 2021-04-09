@@ -1,0 +1,141 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-image: url("../dist/images/background.jpg");
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3rem 1fr 3rem;
+      grid-template-columns: 3rem 1fr 3rem;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  padding: 2.4rem 0;
+  position: relative;
+}
+
+.container .logo {
+  width: 30px;
+  height: 30px;
+}
+
+.container .logo img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  max-width: 100%;
+  height: auto;
+}
+
+.container nav {
+  background-color: #fff;
+  left: -3rem;
+  padding: 3rem;
+  position: absolute;
+  right: -3rem;
+  top: 100%;
+}
+
+.container nav li:first-child {
+  padding-bottom: 1.4rem;
+}
+
+.container nav li:last-child {
+  padding-top: 1.4rem;
+}
+
+.container nav li:not(:first-child):not(:last-child) {
+  padding: 1.4rem 0;
+}
+
+.container nav li:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.container nav a {
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.container nav::after {
+  background-color: rgba(0, 0, 0, 0.8);
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -999;
+  height: calc(100vh - 78px);
+}
+
+#toggle {
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+#toggle:focus {
+  outline: 0;
+}
+
+#toggle span {
+  display: block;
+  width: 80%;
+  height: 2px;
+  margin: 5px auto;
+  background: #fff;
+  -webkit-transition: all 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: all 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+#toggle.open span:first-of-type {
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
+}
+
+#toggle.open span:nth-of-type(2) {
+  opacity: 0;
+}
+
+#toggle.open span:last-of-type {
+  -webkit-transform: rotate(-45deg) translate(5px, -5px);
+          transform: rotate(-45deg) translate(5px, -5px);
+}
+/*# sourceMappingURL=style.css.map */
