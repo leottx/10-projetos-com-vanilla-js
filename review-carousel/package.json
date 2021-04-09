@@ -1,0 +1,14 @@
+{
+  "name": "review-carousel",
+  "version": "1.0.0",
+  "description": "A carousel for displaying customers reviews",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leonardo Teixeira",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.32.8"
+  }
+}

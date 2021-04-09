@@ -5,21 +5,29 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #00c6ff;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#0072ff), to(#00c6ff));
   background: linear-gradient(to right, #0072ff, #00c6ff);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-family: "Montserrat", sans-serif;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 3rem;
   min-height: 100vh;
 }
@@ -42,8 +50,13 @@ body {
 }
 
 .container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .container form button {
@@ -58,6 +71,7 @@ body {
   margin-bottom: 2rem;
   padding: 0.8em 1em;
   text-transform: uppercase;
+  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
@@ -71,13 +85,20 @@ body {
 }
 
 .wrapper {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 25px;
-  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
   background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 150px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 3.2rem auto 4.8rem;
   width: 150px;
 }
@@ -93,7 +114,10 @@ body {
     font-size: 5.6rem;
   }
   .container form {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .container form button:nth-child(2) {
     margin-left: 3rem;

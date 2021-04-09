@@ -1,0 +1,154 @@
+// SMOOTH RESET
+$primary-color: #3901F8;
+$white: #fff;
+$light-grey: #F2F2F2;
+$grey: #E8E8E8;
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  &:focus {
+    outline: none;
+  }
+}
+
+
+// LAYOUT
+body {
+  align-items: center;
+  background-color: $light-grey;
+  display: grid;
+  font-family: 'Poppins', sans-serif;
+  
+  height: 100vh;
+}
+
+.container {
+  grid-template-columns: 3rem 1fr 3rem;
+  grid-template-rows: auto auto;
+}
+
+.card {
+  background-color: $white;
+  box-shadow: 0 20px 30px -10px rgba(33, 0, 139, 0.1);
+  grid-column: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 5rem 5rem 5rem 6.8rem;
+  position: relative;
+  .content {
+    display: grid;
+    align-items: center;
+    column-gap: 5rem;
+    grid-template-columns: 40% 1fr;
+  }
+  figure {
+    background-blend-mode: color;
+    background-size: cover;
+    height: 410px;
+    // img {
+    //   opacity: 0;
+    //   max-width: 100%;
+    //   height: auto;
+    // }
+  }
+  .text-wrapper {
+    padding: 0 6rem;
+    p {
+      font-size: 1.6rem;
+      font-weight: 300;
+      line-height: 1.8;
+      margin-bottom: 6rem;
+      position: relative;
+      &::before {
+        // background-color: red;
+        background-image: url('../dist/images/quote-mark-left.svg');
+        content: "";
+        height: 50px;
+        width: 50px;
+        left: 0;
+        top: 0;
+        transform: translate(-150%, -55%);
+        opacity: .1;
+        position: absolute;
+      }
+      &::after {
+        // background-color: red;
+        background-image: url('../dist/images/quote-mark-right.svg');
+        content: "";
+        height: 50px;
+        width: 50px;
+        right: 0;
+        bottom: 0;
+        transform: translate(85%, 55%);
+        opacity: .1;
+        position: absolute;
+      }
+    }
+    h2 {
+      color:rgb(57, 1, 248);
+      font-size: 2.4rem;
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+    h3 {
+      font-size: 2rem;
+      font-weight: 300;
+      text-transform: capitalize;
+    }
+  }
+  button {
+    background-color: rgb(57, 1, 248);
+    border: none;
+    cursor: pointer;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    z-index: 999;
+    &#forward-btn {
+      right: 0;
+      transform: translate(50%, -50%);
+    }
+    &#prev-btn {
+      left: 0;
+      transform: translate(-50%, -50%);
+      img {
+        transform: scale(-1);
+      }
+    }
+    img {
+      filter: invert(1);
+      max-width: 50%;
+    }
+  }
+}
+
+#random-btn {
+  border: 2px solid rgb(57, 1, 248);
+  color: rgb(57, 1, 248);
+  cursor: pointer;
+  display: block;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  margin: 6rem auto 0;
+  padding: 1rem 2.2rem;
+  transition: all .2s ease;
+  &:hover {
+    color: $white;
+    background-color: rgb(57, 1, 248);
+  }
+}
