@@ -1,0 +1,157 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FEF0F0;
+  display: -ms-grid;
+  display: grid;
+  font-family: 'Nunito', sans-serif;
+  -ms-grid-columns: 3rem 1fr 3rem;
+      grid-template-columns: 3rem 1fr 3rem;
+  height: 100vh;
+  place-items: center;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 20px 60px rgba(255, 80, 78, 0.15);
+          box-shadow: 0 20px 60px rgba(255, 80, 78, 0.15);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50% 50%;
+  -ms-grid-columns: auto;
+      grid-template: 50% 50% / auto;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  overflow: hidden;
+  width: 375px;
+  height: 667px;
+}
+
+.container section {
+  text-align: center;
+  padding: 3rem;
+}
+
+.container .header {
+  background-color: #FF504E;
+  position: relative;
+}
+
+.container .header h1 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.container .header form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .header form input {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-family: inherit;
+  font-size: 8.4rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.container .header form input:focus {
+  outline: none;
+}
+
+.container .header form input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.container .header form input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.container .header form input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.container .header form input:focus::placeholder {
+  color: transparent;
+}
+
+.container .header form label {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.container .bottom .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  margin-top: 5rem;
+}
+
+.container .bottom .wrapper p {
+  color: rgba(255, 80, 78, 0.6);
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.container .bottom .wrapper h2 {
+  color: #FF504E;
+  font-size: 8.4rem;
+  font-weight: 300;
+}
+
+#convert-btn {
+  background-color: #fff;
+  border: 5px solid #FF504E;
+  border-radius: 50%;
+  bottom: -40px;
+  color: #FF504E;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 4rem;
+  font-weight: 700;
+  height: 100px;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  text-transform: uppercase;
+  width: 100px;
+}
+
+#convert-btn:hover {
+  -webkit-transform: scale(1.1) translateX(-46%);
+          transform: scale(1.1) translateX(-46%);
+}
+/*# sourceMappingURL=style.css.map */
