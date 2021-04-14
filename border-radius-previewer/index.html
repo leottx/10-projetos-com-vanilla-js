@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+  <title>Border radius previewer</title>
+</head>
+<body>
+  <!-- start CONTAINER -->
+  <div class="container">
+    <!-- start WRAPPER -->
+    <div class="wrapper">
+      <!-- start VIEWER -->
+      <div class="viewer">
+        <!-- start GHOST -->
+        <div class="ghost">
+          <div class="box"></div>
+        </div>
+        <!-- end GHOST -->
+        <input type="range" id="in-tl" class="slider">
+        <input type="range" id="in-tr" class="slider">
+        <input type="range" id="in-br" class="slider">
+        <input type="range" id="in-bl" class="slider">
+      </div>
+      <!-- end VIEWER -->
+      <!-- start RULES -->
+      <div class="rules">
+        <div class="wrapper-rules">
+          <p id="radios">
+            border-radius:
+            <span id="out-tl">0</span>
+            <span id="out-tr">0</span>
+            <span id="out-br">0</span>
+            <span id="out-bl">0</span>
+            ;
+          </p>
+        </div>
+        <button id="copy-btn">copy</button>
+      </div>
+      <!-- end RULES -->
+      <!-- end WRAPPER -->
+    </div>
+  </div>
+  <!-- end CONTAINER -->
+  <script src="./dist/app.js"></script>
+</body>
+</html>

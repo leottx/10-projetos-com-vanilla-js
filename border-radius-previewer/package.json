@@ -1,0 +1,15 @@
+{
+  "name": "border-radius-previewer",
+  "version": "1.0.0",
+  "description": "Border radius previewer",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch src/scss:dist/css"
+  },
+  "author": "Leonardo Teixeira",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.32.8"
+  }
+}
