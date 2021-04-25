@@ -1,0 +1,14 @@
+{
+  "name": "anime-quote-generator",
+  "version": "1.0.0",
+  "description": "Anime quote generator",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch src:dist"
+  },
+  "author": "Leonardo Teixeira",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.32.11"
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./dist/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- start CONTAINER -->
+  <div class="container">
+    <h1>Anime Quote</h1>
+    <!-- start TEXT -->
+    <section class="text">
+      <figure id="loading">
+        <img src="./dist/images/loading.gif" alt="">
+        <figcaption>Loading...</figcaption>
+      </figure>
+      <h2 id="anime-title">Anime title</h2>
+      <p id="anime-quote">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam voluptate nostrum quod maxime quia doloremque exercitationem voluptatum vel aut reprehenderit repellendus, molestias fugit rem nulla, distinctio tempora, quasi suscipit esse?</p>
+      <h2 id="anime-char">Character name</h2>
+    </section>
+    <!-- end TEXT -->
+    <!-- start DATA -->
+    <section class="data">
+      <h2>Generate random quotes of your favorite anime or character.</h2>
+      <form>
+        <fieldset>
+          <legend>Choose a mode:</legend>
+          <label>
+            <input type="radio" name="mode" id="random" class="opt" checked="true">
+            Random
+          </label>
+          <label>
+            <input type="radio" name="mode" id="title" class="opt">
+            Anime title
+          </label>
+          <label>
+            <input type="radio" name="mode" id="char" class="opt">
+            Character
+          </label>
+        </fieldset>
+        <div class="opt-area">
+          <select name="options" id="anime-opts">
+          </select>
+          <input type="text" id="search" placeholder="Character name">
+          <button>Generate</button>
+        </div>
+      </form>
+    </section>
+    <!-- end DATA -->
+  </div>
+  <!-- end CONTAINER -->
+  <script src="./dist/script.js"></script>
+</body>
+</html>
